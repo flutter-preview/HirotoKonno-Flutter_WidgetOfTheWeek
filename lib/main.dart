@@ -29,7 +29,7 @@ class _SampleSafeAreaView extends StatelessWidget {
         // bottom: false,
         // minimum: EdgeInsets.all(10.0),
         // maintainBottomViewPadding: true,
-        child:             Container(
+        child: Container(
           // height: 2000,
           color: Colors.black,
           child: const Text(
