@@ -14,49 +14,34 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: _SampleExpandedView(),
+      home: _SampleWrapView(),
     );
   }
 }
 
-class _SampleExpandedView extends StatelessWidget {
+class _SampleWrapView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          width: 500,
-          height: 500,
-          decoration: BoxDecoration(
-            color: Colors.orange[300],
-          ),
-          child: Row(
-            children: const [
-              Expanded(
-                child: SizedBox(
-                  width: 100,
-                  height: 100,
-                  child: Card(
-                    color: Colors.green,
-                    child: Text(
-                      'Expanded(in Row)',
-                      style: TextStyle(fontSize: 50),
-                    ),
-                  ),
-                ),
-              ),
-              // Flexible(
-              //   child: SizedBox(
-              //     width: 100,
-              //     height: 100,
-              //     child: Card(
-              //       color: Colors.red,
-              //       child: Text('Flexible'),
-              //     ),
-              //   ),
-              // ),
-            ],
-          ),
+        child: Wrap(
+          direction: Axis.horizontal,
+          // alignment: WrapAlignment.center,
+          spacing: 10.0,
+          runAlignment: WrapAlignment.spaceBetween,
+          runSpacing: 30.0,
+          children: [
+            Container(width: 100, height: 50, color: Colors.red),
+            Container(width: 100, height: 50, color: Colors.green),
+            Container(width: 100, height: 50, color: Colors.blue),
+            Container(width: 100, height: 50, color: Colors.yellow),
+            Container(width: 100, height: 50, color: Colors.orange),
+            Container(width: 100, height: 50, color: Colors.red),
+            Container(width: 100, height: 50, color: Colors.green),
+            Container(width: 100, height: 50, color: Colors.blue),
+            Container(width: 100, height: 50, color: Colors.yellow),
+            Container(width: 100, height: 50, color: Colors.orange),
+          ],
         ),
       ),
     );
