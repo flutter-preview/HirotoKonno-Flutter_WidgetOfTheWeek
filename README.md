@@ -38,6 +38,8 @@ https://www.youtube.com/watch?v=R9C5KMJKluE&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB99
 https://www.youtube.com/watch?v=ORiTTaVY6mM&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=135
 
 ・#13 FadeInImage\
+https://www.youtube.com/watch?v=pK738Pg9cxc&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG&index=134
+
 ・#14 SteamBuilder\
 ・#15 InheritedModel\
 ・#16 ClipRRect
