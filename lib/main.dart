@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '037_AnimatedIcon/animatedIcon_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -23,6 +25,6 @@ class _TestView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Please change SizeBox to target views.
-    return const SizedBox();
+    return const AnimatedIconView();
   }
 }
